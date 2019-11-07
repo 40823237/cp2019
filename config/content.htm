@@ -1,7 +1,6 @@
 <h1>計算機程式</h1>
 <p>計算機課程網頁:<a href="http://mde.tw/cp2019">http://mde.tw/cp2019</a></p>
 <p>Dartpad:<a href="https://dartpad.dev?id=68e451e4dcf5606a168856fdeca353d7">https://dartpad.dev?id=68e451e4dcf5606a168856fdeca353d7</a> </p>
-<p><span>My Dartpad:</span><a href="http://mde.tw/dartpad/?id=68e451e4dcf5606a168856fdeca353d7">http://mde.tw/dartpad/?id=68e451e4dcf5606a168856fdeca353d7</a></p>
 <p>我的倉儲:<a href="https://gist.github.com/40823237">https://gist.github.com/40823237</a></p>
 <p><img alt="" height="177" src="/images/69461404_2106641939640677_9044586021634703360_o.jpg" width="266"/></p>
 <p style="text-align: left;"><span style="background-color: #ffcc99; color: #000000;">
@@ -17,15 +16,15 @@ function getHtmlDart(dirname){
 }
 </script>
 </span></p>
-<p><button onclick="largest()">放大</button> <button onclick="original()">回復</button> <button onclick="getDart('hello')">Hello</button> <button onclick="getDart('for')">For Loop</button> <button onclick="getDart('sum')">Sum</button> <button onclick="getDart('runge_kutta')">Runge-Kutta</button> <button onclick="getDart('mass_spring_damping')">Mass Spring Damping</button> <button onclick="getHtmlDart('roc_flag')">ROC Flag</button> <button onclick="getHtmlDart('grid')">Grid</button> <button onclick="getHtmlDart('slithery')">Slithery</button> <button onclick="getFlutter('flutter1')">Flutter1</button> <button onclick="getFlutter('flutter2')">Flutter2</button> <button onclick="getFlutter('flutter3')">Flutter3</button></p>
-<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823237&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/mass_spring_damping&amp;theme=dark" width="800"></iframe></p><h1>筆記</h1>
+<p><button onclick="largest()">放大</button> <button onclick="original()">回復</button> <button onclick="getDart('hello')">Hello</button> <button onclick="getDart('for loop')">For Loop</button> <button onclick="getDart('sum')">Sum</button> <button onclick="getDart('runge_kutta')">Runge-Kutta</button> <button onclick="getDart('mass_spring_damping')">Mass Spring Damping</button> <button onclick="getHtmlDart('roc_flag')">ROC Flag</button> <button onclick="getHtmlDart('grid')">Grid</button> <button onclick="getHtmlDart('slithery')">Slithery</button> <button onclick="getFlutter('flutter1')">Flutter1</button> <button onclick="getFlutter('flutter2')">Flutter2</button> <button onclick="getFlutter('flutter3')">Flutter3</button></p>
+<p><iframe height="400" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823237&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/mass_spring_damping&amp;theme=dark" width="500"></iframe></p><h1>筆記</h1>
 <h2>Hello</h2>
 <p><span style="background-color: #ffff99;"><strong>原始碼:</strong></span></p>
 <pre class="brush:dart;auto-links:false;toolbar:false" contenteditable="false">void main() {
    print("哈囉!");
 }</pre>
 <p><span style="background-color: #ffff99;"><strong>dartpad:</strong></span></p>
-<p><iframe height="400" src="https://dartpad.dartlang.org/embed-dart html?gh_owner=40823237&amp;gh_repo=cp2019&amp;gh_path=dowloads/dart_ex/hello&amp;amp.theme=dark" width="500"></iframe></p>
+<p><iframe height="400" src="https://dartpad.dev/embed-inline.html?id=ecd34f53b4b395ed0fef6ae2c937f89e&amp;split=80&amp;theme=dark" width="500"></iframe></p>
 <p></p><h2>sum</h2>
 <p><span style="background-color: #ffff99;"><strong>原始碼:</strong></span></p>
 <pre class="brush:dart;auto-links:false;toolbar:false" contenteditable="false">int i;
@@ -40,7 +39,7 @@ main(){
   print('sum = $sum');
 }
 </pre>
-<p><span style="background-color: #ffff99;"><strong>dartpad:</strong></span><br/><br/><iframe height="400" src="https://dartpad.dartlang.org/embed-dart html?gh_owner=40823237&amp;gh_repo=cp2019&amp;gh_path=dowloads/dart_ex/sum&amp;amp.theme=dark" width="500"></iframe></p><h2>for loop</h2>
+<p><span style="background-color: #ffff99;"><strong>dartpad:</strong></span><br/><br/><iframe height="400" src="https://dartpad.dev/embed-inline.html?id=7dd6848df25679103734f72f44602625&amp;split=80&amp;theme=dark" width="500"></iframe></p><h2>for loop</h2>
 <p><span style="background-color: #ffff99;"><strong>原始碼:</strong></span></p>
 <pre class="brush:dart;auto-links:false;toolbar:false" contenteditable="false">// 在所有函式定義外圍所宣告的變數, 稱為全域變數, 有效範圍包含各函式內部與外部
 // for 迴圈所使用的索引值, 宣告為整數 (integer)
@@ -68,7 +67,7 @@ main(){
   print('從 $start 累加至 $end 的總數值為 $sum');
 }</pre>
 <p><span style="background-color: #ffff99;"><strong>dartpad:</strong></span></p>
-<p><iframe height="400" src="https://dartpad.dartlang.org/embed-dart html?gh_owner=40823237&amp;gh_repo=cp2019&amp;gh_path=dowloads/dart_ex/for loop&amp;amp.theme=dark" width="500"></iframe></p><h2>Mass-Spring-Damping</h2>
+<p><iframe height="400" src="https://dartpad.dev/embed-inline.html?id=71e7e78f08778a92f0e700458cef24d0&amp;split=80&amp;theme=dark" width="500"></iframe></p><h2>Mass-Spring-Damping</h2>
 <p><span style="background-color: #ffff99;"><strong>原始碼:</strong></span></p>
 <pre class="brush:dart;auto-links:false;toolbar:false" contenteditable="false">// 下列 Dart 程式, 利用 Runge Kutta 迭代運算法, 解常微分方程式
 // 設 t 為時間, x 則設為物體的位移
@@ -154,7 +153,7 @@ main() {
   rungeKutta(t0, x0, v0, t, h);
 }</pre>
 <p><span style="background-color: #ffff99;"><strong>dartpad:</strong></span></p>
-<p><iframe height="400" src="https://dartpad.dartlang.org/embed-dart html?gh_owner=40823237&amp;gh_repo=cp2019&amp;gh_path=dowloads/dart_ex/Mass-Spring-Damping&amp;amp.theme=dark" width="500"></iframe></p>
+<p><iframe height="400" src="https://dartpad.dev/embed-inline.html?id=99f2e82e8486dafa336acf293c9866f5&amp;split=80&amp;theme=dark" width="500"></iframe></p>
 <p><span style="background-color: #ffff99;"><strong>曲線圖:</strong></span></p>
 <p><img alt="" height="301" src="/images/1.PNG" width="503"/></p>
 <p><img alt="" height="301" src="/images/擷取.PNG" width="501"/></p>
