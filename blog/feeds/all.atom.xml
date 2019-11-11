@@ -17,4 +17,50 @@
 &lt;p&gt;就如同&lt;a href="http://blog.ez2learn.com/2009/06/27/how-to-write-useful-program/"&gt;如何寫出有用的程式?&lt;/a&gt; 一文中所述, "沒有興趣不要來念資工" 是一句非常貼切的警語, 當學生對於程式設計提不起興趣, 沒有將所學的各式語法、資料結構與演算法, 套用在自己非常有興趣的領域中, 用來解決各式問題的話, 日復一日, 我們還是寫不出任何有用的程式!&lt;/p&gt;
 &lt;h2&gt;早該起頭的重要工作&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://www.quora.com/Why-is-programming-so-important-in-the-modern-world"&gt;計算機程式的重要性&lt;/a&gt;其實已經無需爭辯, 人類未來的許多工作都是透過網路與數位運算達成, 既知趨勢如此, 每一位工程師就該越早起頭原本就該進行的重要工作, 透過計算機程式來解決問題, 構築一個值得長期投注心力的程式專案.&lt;/p&gt;</content><category term="2019FallCP"></category></entry><entry><title>期中考</title><link href=".%5C37-1336.html" rel="alternate"></link><published>2019-11-07T14:00:00+08:00</published><updated>2019-11-07T14:00:00+08:00</updated><author><name>40823237</name></author><id>tag:None,2019-11-07:.\37-1336.html</id><content type="html">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/E5GaYRK97TY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</content><category term="2019FallCP"></category></entry><entry><title>期中考</title><link href=".%5C40823237-1336.html" rel="alternate"></link><published>2019-11-07T14:00:00+08:00</published><updated>2019-11-07T14:00:00+08:00</updated><author><name>40823237</name></author><id>tag:None,2019-11-07:.\40823237-1336.html</id><content type="html">&lt;p&gt;期中考進度影片:&lt;/p&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/E5GaYRK97TY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</content><category term="2019FallCP"></category></entry></feed>
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/E5GaYRK97TY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</content><category term="2019FallCP"></category></entry><entry><title>嵌入Dartpad</title><link href=".%5CDartpad.html" rel="alternate"></link><published>2019-11-07T14:00:00+08:00</published><updated>2019-11-07T14:00:00+08:00</updated><author><name>40823237</name></author><id>tag:None,2019-11-07:.\Dartpad.html</id><summary type="html">&lt;script&gt;// &lt;![CDATA[
+function getDart(dirname){
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=mdecourse&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/" + dirname + "&amp;theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+
+function getHtmlDart(dirname){
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=mdecourse&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/" + dirname + "&amp;theme=dark";
+document.getElementById("iframe").src …&lt;/script&gt;</summary><content type="html">&lt;script&gt;// &lt;![CDATA[
+function getDart(dirname){
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=mdecourse&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/" + dirname + "&amp;theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+
+function getHtmlDart(dirname){
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=mdecourse&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/" + dirname + "&amp;theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function getFlutter(dirname){
+    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=mdecourse&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/" + dirname + "&amp;theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function largest(){
+document.getElementById("iframe").width = document.body.clientWidth ;
+document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
+}
+
+function original(){
+document.getElementById("iframe").width = 800 ;
+document.getElementById("iframe").height = 600 ;
+}
+// ]]&gt;&lt;/script&gt;
+
+&lt;!-- 取 Dart 程式的按鈕 --&gt;
+
+&lt;p&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h4&gt;純 Dart 程式&lt;/h4&gt;
+&lt;p&gt;&lt;button onclick="getDart('hello')"&gt;Hello&lt;/button&gt; &lt;button onclick="getDart('for')"&gt;For Loop&lt;/button&gt; &lt;button onclick="getDart('sum')"&gt;Sum&lt;/button&gt; &lt;button onclick="getDart('runge_kutta')"&gt;Runge-Kutta&lt;/button&gt; &lt;button onclick="getDart('rk_ex1')"&gt;RK ex1&lt;/button&gt; &lt;button onclick="getDart('mass_spring_damping')"&gt;Mass Spring Damping&lt;/button&gt;&lt;/p&gt;
+&lt;h4&gt;Html 程式&lt;/h4&gt;
+&lt;p&gt;&lt;button onclick="getHtmlDart('roc_flag')"&gt;ROC Flag&lt;/button&gt; &lt;button onclick="getHtmlDart('grid')"&gt;Grid&lt;/button&gt; &lt;button onclick="getHtmlDart('slithery')"&gt;Slithery&lt;/button&gt;&lt;/p&gt;
+&lt;h4&gt;Flutter 程式&lt;/h4&gt;
+&lt;p&gt;&lt;button onclick="getFlutter('flutter1')"&gt;Flutter1&lt;/button&gt; &lt;button onclick="getFlutter('flutter2')"&gt;Flutter2&lt;/button&gt; &lt;button onclick="getFlutter('flutter3')"&gt;Flutter3&lt;/button&gt;&lt;/p&gt;
+&lt;p style="text-align: left;"&gt;&lt;span style="background-color: #ffcc99; color: #000000;"&gt;&lt;!-- 內建放入的 Dart 原始碼 --&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;button onclick="largest()"&gt;放大&lt;/button&gt; &lt;button onclick="original()"&gt;回復&lt;/button&gt;&lt;/p&gt;
+&lt;p&gt;&lt;iframe width="800" height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=mdecourse&amp;amp;gh_repo=cp2019&amp;amp;gh_path=downloads/dart_ex/mass_spring_damping&amp;amp;theme=dark"&gt;&lt;/iframe&gt;&lt;/p&gt;&lt;/p&gt;</content><category term="2019FallCP"></category></entry></feed>

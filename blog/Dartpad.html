@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
 
-  <title>期中考</title>
+  <title>嵌入Dartpad</title>
 
 
   <meta name="HandheldFriendly" content="True" />
@@ -40,9 +40,9 @@
   <![endif]-->
 
 
-    <link href="./40823237-1336.html" rel="canonical" />
+    <link href="./Dartpad.html" rel="canonical" />
 
-        <meta name="description" content="期中考進度影片:">
+        <meta name="description" content="//">
 
         <meta name="author" content="40823237">
 
@@ -53,10 +53,10 @@
 
 <!-- Open Graph -->
 <meta property="og:site_name" content="CP2019 40823237"/>
-<meta property="og:title" content="期中考"/>
-<meta property="og:description" content="期中考進度影片:"/>
+<meta property="og:title" content="嵌入Dartpad"/>
+<meta property="og:description" content="//"/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="./40823237-1336.html"/>
+<meta property="og:url" content="./Dartpad.html"/>
 <meta property="og:type" content="article"/>
 <meta property="article:published_time" content="2019-11-07 14:00:00+08:00"/>
 <meta property="article:modified_time" content=""/>
@@ -71,8 +71,8 @@
 {
   "@context": "http://schema.org",
   "@type": "Article",
-  "name": "期中考",
-  "headline": "期中考",
+  "name": "嵌入Dartpad",
+  "headline": "嵌入Dartpad",
   "datePublished": "2019-11-07 14:00:00+08:00",
   "dateModified": "",
   "author": {
@@ -81,8 +81,8 @@
     "url": "./author/40823237.html"
   },
   "image": "./theme/images/post-bg.jpg",
-  "url": "./40823237-1336.html",
-  "description": "期中考進度影片:"
+  "url": "./Dartpad.html",
+  "description": "//"
 }
 </script>
 <script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
@@ -197,7 +197,7 @@ init_mathjax();
             <a class="menu-button"><i class="ic ic-menu"></i> Menu</a>
           </span>
         </nav>
-        <h1 class="post-title">期中考</h1>
+        <h1 class="post-title">嵌入Dartpad</h1>
         <!-- TODO : Proper class for headline -->
         <span class="post-meta">
                 <a href="./author/40823237.html">40823237</a>
@@ -223,19 +223,56 @@ init_mathjax();
         <article class="post">
         <div class="inner">
             <section class="post-content">
-                <p>期中考進度影片:</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/E5GaYRK97TY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <script>// <![CDATA[
+function getDart(dirname){
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=mdecourse&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+
+function getHtmlDart(dirname){
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=mdecourse&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function getFlutter(dirname){
+    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=mdecourse&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function largest(){
+document.getElementById("iframe").width = document.body.clientWidth ;
+document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
+}
+
+function original(){
+document.getElementById("iframe").width = 800 ;
+document.getElementById("iframe").height = 600 ;
+}
+// ]]></script>
+
+<!-- 取 Dart 程式的按鈕 -->
+
+<p></span></p>
+<h4>純 Dart 程式</h4>
+<p><button onclick="getDart('hello')">Hello</button> <button onclick="getDart('for')">For Loop</button> <button onclick="getDart('sum')">Sum</button> <button onclick="getDart('runge_kutta')">Runge-Kutta</button> <button onclick="getDart('rk_ex1')">RK ex1</button> <button onclick="getDart('mass_spring_damping')">Mass Spring Damping</button></p>
+<h4>Html 程式</h4>
+<p><button onclick="getHtmlDart('roc_flag')">ROC Flag</button> <button onclick="getHtmlDart('grid')">Grid</button> <button onclick="getHtmlDart('slithery')">Slithery</button></p>
+<h4>Flutter 程式</h4>
+<p><button onclick="getFlutter('flutter1')">Flutter1</button> <button onclick="getFlutter('flutter2')">Flutter2</button> <button onclick="getFlutter('flutter3')">Flutter3</button></p>
+<p style="text-align: left;"><span style="background-color: #ffcc99; color: #000000;"><!-- 內建放入的 Dart 原始碼 --></span></p>
+<p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
+<p><iframe width="800" height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=mdecourse&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/mass_spring_damping&amp;theme=dark"></iframe></p></p>
             </section>
 
             <section class="post-info">
                 <div class="post-share">
-                    <a class="twitter" href="https://twitter.com/share?text=期中考&amp;url=./40823237-1336.html" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <a class="twitter" href="https://twitter.com/share?text=嵌入Dartpad&amp;url=./Dartpad.html" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <i class="ic ic-twitter"></i><span class="hidden">Twitter</span>
                     </a>
-                    <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=./40823237-1336.html" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=./Dartpad.html" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                     <i class="ic ic-facebook"></i><span class="hidden">Facebook</span>
                     </a>
-                    <a class="googleplus" href="https://plus.google.com/share?url=./40823237-1336.html" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <a class="googleplus" href="https://plus.google.com/share?url=./Dartpad.html" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                     <i class="ic ic-googleplus"></i><span class="hidden">Google+</span>
                     </a>
                     <div class="clear"></div>
@@ -251,18 +288,11 @@ init_mathjax();
 
 
                 <aside class="post-nav">
-                    <a class="post-nav-next" href="./37-1336.html">
+                    <a class="post-nav-next" href="./40823237-1336.html">
                         <section class="post-nav-teaser">
                             <i class="ic ic-arrow-left"></i>
                                 <h2 class="post-nav-title">期中考</h2>
-                            <p class="post-nav-excerpt"></p>
-                        </section>
-                    </a>
-                    <a class="post-nav-prev" href="./Dartpad.html">
-                        <section class="post-nav-teaser">
-                            <i class="ic ic-arrow-right"></i>
-                                <h2 class="post-nav-title">嵌入Dartpad</h2>
-                            <p class="post-nav-excerpt">//</p>
+                            <p class="post-nav-excerpt">期中考進度影片:</p>
                         </section>
                     </a>
                     <div class="clear"></div>
