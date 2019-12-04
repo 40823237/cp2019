@@ -1,4 +1,6 @@
-name:Dart hello example2
-mode:dart
+name: Dart HTML test with just main
+mode: html
 files:
   - name: main.dart
+  - name: index.html
+  - name: style.css
