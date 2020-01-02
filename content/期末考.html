@@ -149,9 +149,53 @@ init_mathjax();
           </div>
           
         </header>
-    <div id="tipue_search_content">期末考 << <a href='期末考.html'>Previous</a> <a href='溫度轉換.html'>Next</a> >> 溫度轉換<br /><h1>查驗考試</h1>
-<p>W16 查驗考試-報告影片</p>
-<p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/0OgqPplJQec" width="560"></iframe></p><br />期末考 << <a href='期末考.html'>Previous</a> <a href='溫度轉換.html'>Next</a> >> 溫度轉換</div>
+    <div id="tipue_search_content">筆記 << <a href='筆記.html'>Previous</a> <a href='查驗考試.html'>Next</a> >> 查驗考試<br /><h1>期末考</h1>
+<p></p>
+<p>
+<script>
+function getDart(dirname){
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823237&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+
+function getHtmlDart(dirname){
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=40823237&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function getFlutter(dirname){
+    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=40823237&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function largest(){
+document.getElementById("iframe").width = document.body.clientWidth ;
+document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
+}
+
+function original(){
+document.getElementById("iframe").width = 800 ;
+document.getElementById("iframe").height = 600 ;
+}
+</script>
+</p>
+<!-- 取 Dart 程式的按鈕 -->
+<h4>純 Dart 程式</h4>
+<p><button onclick="getDart('weight')">重量</button></p>
+<h4>Html 程式</h4>
+<p><button onclick="getHtmlDart('weight_change')">重量轉換</button> <button onclick="getHtmlDart('national_flag')">各國國旗</button></p>
+<!-- 內建放入的 Dart 原始碼 -->
+<p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
+<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823237&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/weight&amp;theme=dark" width="800"></iframe></p>
+<p>請輸入所要轉換的重量以數字加上 KG 或 LB:<br/><input id="weight" max="30" min="0" type="text" value="10KG"/> <input id="submit" type="button" value="換算"/><br/> <br/>轉換結果:<br/><br/><label id="output"></label></p>
+<p>
+<script src="https://40823237.github.io/cp2019/downloads/dart_ex/weight_change/weight_change.js"></script>
+</p>
+<p><canvas height="200" id="canvas" width="300"></canvas></p>
+<p><button id="button">Clear Canvas</button> <button id="roc">Draw ROC</button> <button id="jpn">Draw JPN</button> <button id="fra">Draw FRA</button> <button id="rus">Draw RUS</button> <button id="usa">Draw USA</button> <button id="uk">Draw UK</button> <button id="deu">Draw DEU</button> <button id="nld">Draw NLD</button></p>
+<p>
+<script src="https://40823237.github.io/cp2019/downloads/dart_ex/national_flag/national_flag.js"></script>
+</p><br />筆記 << <a href='筆記.html'>Previous</a> <a href='查驗考試.html'>Next</a> >> 查驗考試</div>
         
     <!-- footer -->
       <div class="container">
