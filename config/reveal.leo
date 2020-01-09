@@ -31,6 +31,9 @@
 <v t="leo.20180902120523.16"><vh>導入縮排程式碼</vh>
 <v t="leo.20180902120523.17"><vh>引用程式碼</vh></v>
 </v>
+<v t="leo.20200109142329.1"><vh>newHeadline</vh>
+<v t="leo.20200109142334.1"><vh>newHeadline</vh></v>
+</v>
 <v t="leo.20180902120523.18"><vh>導入影片</vh>
 <v t="leo.20180902120523.19"><vh>iframe 導入影片</vh></v>
 </v>
@@ -94,7 +97,7 @@ Created by [40823237](http://lab.kmol.info/)
 
 						
 </t>
-<t tx="leo.20180902120523.15"># 溫度的轉換與方程式
+<t tx="leo.20180902120523.15">## 溫度的轉換與方程式
 
 
 &lt;iframe src="https://dartpad.github.io/embed-html.html?gh_owner=40823237&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/temp1&amp;theme=dark" width="800" height="550"&gt;&lt;/iframe&gt;
@@ -311,5 +314,21 @@ vertical: body pane on the botton</t>
 <t tx="leo.20200109140103.1">## 心得
 
 上這門計算機課程真的學到了很多，之前不懂的時候，如果不小心誤觸到程式碼，都很怕把電腦弄壞，但幸好學了這門課，讓我不僅不再害怕，並知道如何善用程式碼，更會自己架設網站了，這門課雖然只上短短一學期，真正學到身上的真的很淺，但沒關係，至少知道自己還有甚麼路可以走，至少學了才知道這個領域之廣大。</t>
+<t tx="leo.20200109142329.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20200109142334.1">## 重量轉換
+
+
+&lt;iframe src="https://dartpad.github.io/embed-html.html?gh_owner=40823237&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/weight_change&amp;theme=dark" width="800" height="550"&gt;&lt;/iframe&gt;
+    &lt;/script&gt;</t>
 </tnodes>
 </leo_file>
